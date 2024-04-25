@@ -3,7 +3,7 @@
 Oslomet brukernavn: jemel6672
 Fullt navn: Jesper Sivertsen Mellbye
 
-Link til github-repo:
+Link til github-repo: https://github.com/Jespermellbye/Oblig3DATA1700-main_test
 
 Link til video: https://youtu.be/_NgFu6QoCvY
 
