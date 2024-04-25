@@ -1,74 +1,74 @@
 package com.example.oblig3data1700;
 
 public class Billett {
-    private String movie;
-    private String numberOfTickets;
-    private String fname;
-    private String lname;
-    private String email;
-    private String phone;
+    private String film;
+    private String antallBilletter;
+    private String fnavn;
+    private String enavn;
+    private String epost;
+    private String telefonNr;
     private int id;
 
     public Billett(){
 
     }
 
-    public Billett(String movie, String numberOfTickets, String fname, String lname, String email, String phone, int id) {
-        this.movie = movie;
-        this.numberOfTickets = numberOfTickets;
-        this.fname = fname;
-        this.lname = lname;
-        this.email = email;
-        this.phone = phone;
+    public Billett(String film, String antallBilletter, String fnavn, String enavn, String epost, String telefonNr, int id) {
+        this.film = film;
+        this.antallBilletter = antallBilletter;
+        this.fnavn = fnavn;
+        this.enavn = enavn;
+        this.epost = epost;
+        this.telefonNr = telefonNr;
         this.id = id;
     }
 
-    public String getMovie() {
-        return this.movie;
+    public String getFilm() {
+        return this.film;
     }
 
-    public void setMovie(String movie) {
-        this.movie = movie;
+    public void setFilm(String film) {
+        this.film = film;
     }
 
-    public String getNumberOfTickets() {
-        return this.numberOfTickets;
+    public String getAntallBilletter() {
+        return this.antallBilletter;
     }
 
-    public void setNumberOfTickets(String numberOfTickets) {
-        this.numberOfTickets = numberOfTickets;
+    public void setAntallBilletter(String antallBilletter) {
+        this.antallBilletter = antallBilletter;
     }
 
-    public String getFname() {
-        return this.fname;
+    public String getFnavn() {
+        return this.fnavn;
     }
 
-    public void setFname(String fname) {
-        this.fname = fname;
+    public void setFnavn(String fnavn) {
+        this.fnavn = fnavn;
     }
 
-    public String getLname() {
-        return this.lname;
+    public String getEnavn() {
+        return this.enavn;
     }
 
-    public void setLname(String lname) {
-        this.lname = lname;
+    public void setEnavn(String enavn) {
+        this.enavn = enavn;
     }
 
-    public String getEmail() {
-        return this.email;
+    public String getEpost() {
+        return this.epost;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEpost(String epost) {
+        this.epost = epost;
     }
 
-    public String getPhone() {
-        return this.phone;
+    public String getTelefonNr() {
+        return this.telefonNr;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setTelefonNr(String telefonNr) {
+        this.telefonNr = telefonNr;
     }
 
     public int getId() {

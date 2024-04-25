@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Rediger Billett</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="redigerBillett.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Rediger Billett</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <form>
+                Film:
+                <select id="filmValg">
+                    <option value="0">Velg film:</option>
+                    <option>Star Wars</option>
+                    <option>Harry Potter</option>
+                    <option>Dune</option>
+                </select>
+                <span id="ugyldigValg" style="color:red"></span>
+                <br><br>
+                Antall billetter:
+                <input type="number" id="antall" name="tickets" size="2"/>
+                <span id="ugyldigAntall" style="color:red"></span>
+                <br>
+                Fornavn:
+                <input type="text" id="fnavn" name="first"/>
+                <span id="ugyldigFornavn" style="color:red"></span>
+                <br>
+                Etternavn:
+                <input type="text" id="enavn" name="last"/>
+                <span id="ugyldigEtternavn" style="color:red"></span>
+                <br>
+                Epost:
+                <input type="text" id="epost" name="email"/>
+                <span id="ugyldigEpost" style="color:red"></span>
+                <br>
+                TelefonNr:
+                <input type="text" id="telefonNr" name="number"/>
+                <span id="ugyldigTelefonNr" style="color:red"></span>
+                <br>
+                <button type="button" onclick="editTicket()">Lagre endringer</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

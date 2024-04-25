@@ -3,46 +3,41 @@ package com.example.oblig3data1700;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
 import java.util.List;
-
 
 @RestController
 public class BillettController {
     @Autowired
-    BillettRepository rep;
+    private BillettRepository rep;
 
-    @PostMapping("/save")
-    public void saveTickets(@RequestBody Billett ticket) {
-        System.out.println(ticket);
-        rep.saveTickets(ticket);
+    @PostMapping("/lagre")
+    public void lagreBillett(@RequestBody Billett billett) {
+        rep.lagreBilletter(billett);
+    }
+
+    @GetMapping("/hentAlle")
+    public List<Billett> hentAlleBilletter() {
+        return rep.hentAlleBilletter();
+    }
+
+    @GetMapping("/hentEn")
+    public Billett hentEnBillett(@RequestParam Integer id) {
+        return rep.hentEnBillett(id);
+    }
+
+    @PostMapping("/endre")
+    public void endreBillett(@RequestBody Billett billett) {
+        rep.endreBillett(billett);
+    }
+
+    @GetMapping("/slettEn")
+    public void slettEn(Integer id) {
+        rep.slettEn(id);
     }
 
 
-    @GetMapping("/getAll")
-    public List<Billett> getAllTickets() {
-
-        return rep.getAllTickets();
+    @DeleteMapping("/slettAlleBilletter")
+    public void slettAlle() {
+        rep.slettAlle();
     }
-
-    @GetMapping("/getOneTicket")
-    public Billett getOneTicket(Integer id) {
-        return rep.getOneTicket(id);
-    }
-
-    @PostMapping("/editTicket")
-    public void editTicket(@RequestBody Billett ticket) {
-        rep.editTicket(ticket);
-    }
-
-    @GetMapping("/deleteOne")
-    public void deleteOne(Integer id) {
-        rep.deleteOne(id);
-    }
-
-    @DeleteMapping("/deleteAll")
-    public void deleteAllTickets() {
-        rep.deleteAllTickets();
-    }
-
 }
